@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIVEDOC - Eye Disease Detection</title>
+    <title>LIVEDOC - Prediction Result</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
-<body class="home-page"> <!-- Ensuring the background image applies -->
-
-    <!-- Header Section -->
+<body class="result-page"> <!-- Apply background image specific to this page -->
     <header>
         <nav>
             <a href="/">Home</a>
@@ -18,19 +16,16 @@
             <a href="/contact">Contact</a>
         </nav>
     </header>
-
-    <!-- Main Content -->
     <main class="container">
-        <h1>We're Determined for Your Better Life</h1>
-        <p>You can get the care you need 24/7 – be it online or in person. You will be treated by caring specialist doctors.</p>
-        
-        <a href="/inp" class="btn">Make an Appointment</a>
-    </main>
+        <h2>Prediction Result</h2>
+        <p>The predicted disease is: <strong>{{ prediction }}</strong></p>
 
-    <!-- Footer -->
+        <a href="/inp" class="btn">Try Again</a>
+    </main>
     <footer>
         <p>© 2025 LIVEDOC. All rights reserved.</p>
     </footer>
 
 </body>
 </html>
+

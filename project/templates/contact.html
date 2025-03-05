@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIVEDOC - Eye Disease Detection</title>
+    <title>Contact - LIVEDOC</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
-<body class="home-page"> <!-- Ensuring the background image applies -->
+<body class="contact-page"> <!-- Ensuring background image applies -->
 
     <!-- Header Section -->
     <header>
@@ -21,10 +21,12 @@
 
     <!-- Main Content -->
     <main class="container">
-        <h1>We're Determined for Your Better Life</h1>
-        <p>You can get the care you need 24/7 – be it online or in person. You will be treated by caring specialist doctors.</p>
-        
-        <a href="/inp" class="btn">Make an Appointment</a>
+        <h1>Contact Us</h1>
+        <p>Email: support@eyediseaseai.com</p>
+        <p>Phone: +1 234 567 890</p>
+        <p>Address: 123 AI Health Street, Vision City</p>
+
+        <a href="{{ url_for('home') }}" class="btn">Back to Home</a>
     </main>
 
     <!-- Footer -->
